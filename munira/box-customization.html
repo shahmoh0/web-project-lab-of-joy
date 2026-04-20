@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab of JOY | Box Customization</title>
+  <link rel="stylesheet" href="labofjoy.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <h1 class="brand">Lab of JOY 🎁
+        <small>Your order is about to become a moment of JOY 💝</small>
+        <br>
+      </h1>
+
+
+<nav class="navBar">
+<a class="pill" href="home.html">Home</a>
+<a class="pill" href="categories.html">Categories</a>
+<a class="pill active" href="box-customization.html">Box Customization</a>
+<a class="pill" href="cart.html">Cart</a>
+<a class="pill" href="Web-Project-Shahad (1).html">About Us</a>
+</nav>
+
+   
+    </header>
+
+    <main class="panel">
+      <h2>Customize Your Box ✨</h2>
+      <p>Pick your box type, packaging style, and keep your selections within your budget.</p>
+
+    
+
+      <div class="grid-2">
+        <section class="card">
+          <h3>1) Budget & Details</h3>
+
+          <form>
+            <div class="row">
+              <label class="field">
+                <span>Budget (SAR)</span>
+                <input type="number" name="budget" min="50" max="500" step="10" value="200" required>
+              </label>
+
+              <label class="field">
+                <span>Occasion</span>
+                <select name="occasion" required>
+                  <option value="" disabled>Select</option>
+                  <option value="Birthday" selected>Birthday</option>
+                  <option value="Graduation">Graduation</option>
+                  <option value="Wedding">Wedding</option>
+                  <option value="Thank You">Thank You</option>
+                </select>
+              </label>
+            </div>
+
+            <h3 style="margin-top:6px;">2) Box Type</h3>
+            <div class="options">
+              <input class="sr" type="radio" id="bx1" name="box_type" value="Classic Box" checked required>
+              <label class="option-card" for="bx1">
+                <div><strong>Classic Box</strong><br><em>Soft & simple</em></div>
+                <span class="badge">Popular</span>
+              </label>
+
+              <input class="sr" type="radio" id="bx2" name="box_type" value="Luxury Box">
+              <label class="option-card" for="bx2">
+                <div><strong>Luxury Box</strong><br><em>Premium feel</em></div>
+                <span class="badge">⭐</span>
+              </label>
+
+              <input class="sr" type="radio" id="bx3" name="box_type" value="Wooden Box">
+              <label class="option-card" for="bx3">
+                <div><strong>Wooden Box</strong><br><em>Elegant touch</em></div>
+                <span class="badge">New</span>
+              </label>
+
+              <input class="sr" type="radio" id="bx4" name="box_type" value="Transparent Box">
+              <label class="option-card" for="bx4">
+                <div><strong>Transparent Box</strong><br><em>Show the joy</em></div>
+                <span class="badge">Cute</span>
+              </label>
+            </div>
+
+            <h3 style="margin-top:14px;">3) Packaging Style</h3>
+            <div class="options">
+              <input class="sr" type="radio" id="pk1" name="packaging" value="Ribbon" checked required>
+              <label class="option-card" for="pk1">
+                <div><strong>Ribbon</strong><br><em>Classic ribbon</em></div>
+                <span class="badge">🎀</span>
+              </label>
+
+              <input class="sr" type="radio" id="pk2" name="packaging" value="Flowers Wrap">
+              <label class="option-card" for="pk2">
+                <div><strong>Flowers Wrap</strong><br><em>Fresh look</em></div>
+                <span class="badge">🌸</span>
+              </label>
+
+              <input class="sr" type="radio" id="pk3" name="packaging" value="Paper Wrap">
+              <label class="option-card" for="pk3">
+                <div><strong>Paper Wrap</strong><br><em>Minimal style</em></div>
+                <span class="badge">🧻</span>
+              </label>
+
+              <input class="sr" type="radio" id="pk4" name="packaging" value="No Wrap">
+              <label class="option-card" for="pk4">
+                <div><strong>No Wrap</strong><br><em>Just the box</em></div>
+                <span class="badge">—</span>
+              </label>
+            </div>
+
+            <div class="actions">
+              <button class="btn ghost" type="submit">Save Choices</button>
+              <a class="btn" href="message.html">Continue to Message →</a>
+              <button class="btn ghost" type="reset">Reset Items</button>
+            </div>
+          </form>
+
+          <div class="summary-box" style="margin-top:12px;">
+            <div class="tag">Budget: SAR 200</div>
+            <div class="tag">Total: SAR 150</div>
+            <div class="tag">Remaining: SAR 50</div>
+          </div>
+        </section>
+
+        <aside class="card">
+          <h3>Your Box Items</h3>
+
+          <div class="list">
+            <div class="item">
+              <div class="meta">
+                <b>Mini Chocolate Pack</b>
+                <small>SAR 45</small>
+              </div>
+              <div style="display:flex; gap:8px; align-items:center;">
+                <span class="badge">Sweet</span>
+                <button class="btn ghost" type="button" style="padding:9px 12px;">Remove</button>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="meta">
+                <b>Scented Candle</b>
+                <small>SAR 70</small>
+              </div>
+              <div style="display:flex; gap:8px; align-items:center;">
+                <span class="badge">Cozy</span>
+                <button class="btn ghost" type="button" style="padding:9px 12px;">Remove</button>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="meta">
+                <b>Flower Mini Bouquet</b>
+                <small>SAR 35</small>
+              </div>
+              <div style="display:flex; gap:8px; align-items:center;">
+                <span class="badge">Fresh</span>
+                <button class="btn ghost" type="button" style="padding:9px 12px;">Remove</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="total">
+            <span>Total</span>
+            <span>SAR 150</span>
+          </div>
+        </aside>
+      </div>
+
+      <div class="footer">© Lab of Joy — Educational (No real payment/delivery)</div>
+    </main>
+  </div>
+</body>
+</html>
