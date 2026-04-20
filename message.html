@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab of JOY | Message</title>
+  <link rel="stylesheet" href="labofjoy.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <h1 class="brand">Lab of JOY 💌
+        <small>Make it personal — choose a card and write your message ✨</small>
+      </h1>
+
+      <nav class="pills">
+        <a class="pill" href="box-customization.html">Box Customization</a>
+        <a class="pill active" href="message.html">Message</a>
+        <a class="pill" href="checkout.html">Checkout</a>
+        <a class="pill" href="order-success.html">Order Success</a>
+      </nav>
+    </header>
+
+    <main class="panel">
+      <h2>Message Card ✨</h2>
+      <p>Fill the form then Continue.</p>
+
+      <div class="grid-2">
+        <section class="card">
+          <h3>1) Your Message</h3>
+
+          <form>
+            <label class="field">
+              <span>Write Message</span>
+              <textarea name="message" placeholder="Write something sweet..." required>Happy Birthday! Wishing you joy and beautiful moments always.</textarea>
+            </label>
+
+            <div class="row">
+              <label class="field">
+                <span>Font Type</span>
+                <select name="font_type" required>
+                  <option value="" disabled>Select</option>
+                  <option value="Serif" selected>Serif</option>
+                  <option value="Sans-serif">Sans-serif</option>
+                  <option value="Cursive">Cursive</option>
+                  <option value="Monospace">Monospace</option>
+                </select>
+              </label>
+
+              <label class="field">
+                <span>Font Color</span>
+                <input type="color" name="font_color" value="#222222">
+              </label>
+            </div>
+
+            <h3 style="margin-top:6px;">2) Card Style</h3>
+            <div class="options">
+              <input class="sr" type="radio" id="cs1" name="card_style" value="Classic" checked required>
+              <label class="option-card" for="cs1">
+                <div><strong>Classic</strong><br><em>Clean & simple</em></div>
+                <span class="badge">✨</span>
+              </label>
+
+              <input class="sr" type="radio" id="cs2" name="card_style" value="Romantic">
+              <label class="option-card" for="cs2">
+                <div><strong>Romantic</strong><br><em>Soft pink</em></div>
+                <span class="badge">💗</span>
+              </label>
+
+              <input class="sr" type="radio" id="cs3" name="card_style" value="Birthday">
+              <label class="option-card" for="cs3">
+                <div><strong>Birthday</strong><br><em>Fun vibes</em></div>
+                <span class="badge">🎉</span>
+              </label>
+
+              <input class="sr" type="radio" id="cs4" name="card_style" value="Minimal">
+              <label class="option-card" for="cs4">
+                <div><strong>Minimal</strong><br><em>Neutral</em></div>
+                <span class="badge">—</span>
+              </label>
+            </div>
+
+            <div class="actions">
+              <a class="btn ghost" href="box-customization.html">← Back</a>
+              <a class="btn" href="checkout.html">Continue to Checkout →</a>
+            </div>
+          </form>
+        </section>
+
+        <aside class="card">
+          <h3>Saved Preview</h3>
+          <p class="mini">This box shows a preview of your message.</p>
+
+          <div class="item" style="flex-direction:column; align-items:flex-start; gap:10px;">
+            <span class="badge">Classic</span>
+            <div style="font-weight:800; font-size:18px; line-height:1.3; color:#222222;">
+              Happy Birthday! Wishing you joy and beautiful moments always.
+            </div>
+            <div class="mini">Font: Serif</div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="footer">© Lab of Joy — Educational (No real payment/delivery)</div>
+    </main>
+  </div>
+</body>
+</html>
